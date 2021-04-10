@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+    
+    <div id="tweetDiv"></div>
+    <script type="text/javascript">
+         var tweets = ["おはよう！", "こんにちは","おやすみ","アニワン激アツ"];
+         var tweetsStr = "";
+
+         //for (var i = 0; i<tweets.length; i++){
+        var i = 0;
+        while(i < tweets.length){
+             //alert(tweets[i]);
+             tweetsStr = tweetsStr + "<p>" + tweets[i] + "</p>";
+             i++;
+         }
+
+         document.getElementById("tweetDiv").innerHTML = tweetsStr;
+    </script>
+</body>
+</html>
