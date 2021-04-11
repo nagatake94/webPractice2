@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        #fadeInText{
+            display: none;
+        }
+   
+    </style>
+</head>
+<body>
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <p id="text">このテキストは反転します</p>
+    <button id="toggle">トグルする！</button>
+    
+    <script type="text/javascript">
+        $("#toggle").click(function(){
+            if($("#text").css("display")==="none"){
+                $("#text").fadeIn("slow");  
+            }else{
+                $("#text").fadeOut("slow");
+            }
+        })
+    </script>
+</body>
+</html>
+
+
+
+
+

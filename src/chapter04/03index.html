@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        #circle{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: green;
+            margin: 10px;
+        }
+   
+    </style>
+</head>
+<body>
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <div id="circle"></div>
+    
+    <p>ここに文章が入ります</p>
+    <iframe src="http://entreschoolonline.com"></iframe>
+  
+    <script type="text/javascript">
+        $("div").hover(function(){
+            //$("p").html("Divがクリックされました！")
+            // alert("図形がクリックされました");
+            $("iframe").attr("src","http://learningdesign.jp");
+        });
+      
+    </script>
+</body>
+</html>
+
+
+
+
+
